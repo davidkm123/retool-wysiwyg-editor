@@ -1,11 +1,13 @@
 {
-  "name": "my-react-app",
+  "name": "retool-wysiwyg-editor",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@tryretool/custom-component-support": "latest",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@ckeditor/ckeditor5-react": "^9.2.0",
+    "ckeditor5": "44.1.0"
   },
   "engines": {
     "node": ">=20.0.0"
@@ -30,5 +32,12 @@
     "eslint-plugin-react": "^7.34.1",
     "prettier": "^3.0.3",
     "postcss-modules": "^6.0.0"
+  },
+  "retoolCustomComponentLibraryConfig": {
+    "name": "WYSIWYGEditor",
+    "label": "WYSIWYG Editor",
+    "description": "A library of rich text editors for Retool",
+    "entryPoint": "src/index.tsx",
+    "outputPath": "dist"
   }
 }
