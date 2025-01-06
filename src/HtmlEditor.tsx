@@ -101,6 +101,7 @@ export const HtmlEditor: FC = () => {
 						'underline',
 						'|',
 						'link',
+						'insertImageViaUrl',
 						'mediaEmbed',
 						'blockQuote',
 						'|',
