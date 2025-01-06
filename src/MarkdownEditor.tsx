@@ -42,9 +42,17 @@ import './Editor.css';
 const LICENSE_KEY = 'GPL';
 
 export const MarkdownEditor: FC = () => {
+    Retool.useComponentSettings({
+        defaultWidth: 12,
+        defaultHeight: 36
+    })
 	const [value, setValue] = Retool.useStateString({
-		name: 'value'
+		name: 'Default value'
 	})
+    const [placeholder, _setPlaceholder] = Retool.useStateString({
+        name: 'Placeholder',
+        initialValue: 'Type or paste your content here!'
+    })
 	const editorContainerRef = useRef(null);
 	const divRef = useRef<HTMLDivElement>(null);
 	const editorInstanceRef = useRef<ClassicEditor | null>(null);
@@ -206,7 +214,7 @@ export const MarkdownEditor: FC = () => {
 						reversed: true
 					}
 				},
-				placeholder: 'Type or paste your content here!'
+				placeholder: placeholder
 			}
 		};
 	}, [isLayoutReady]);

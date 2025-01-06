@@ -19,7 +19,9 @@ Steps:
 
 To use the editor in your Retool project, simply add the `HtmlEditor` or `MarkdownEditor` component to your canvas.
 
-Access the components current value by using the `value` property. Set the value in the components `value` field within the components settings.
+Access the components current value by using the `value` property. Set the value in the components `Default value` field within the components settings.
+
+You can also set the `Placeholder` property in the components settings to customize the placeholder text. NOTE: you will need to refresh the page for the placeholder to update.
 
 ## License
 
