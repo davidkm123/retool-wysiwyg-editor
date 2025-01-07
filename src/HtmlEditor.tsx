@@ -50,10 +50,12 @@ export const HtmlEditor: FC = () => {
         defaultHeight: 36
     })
 	const [value, setValue] = Retool.useStateString({
-		name: 'Default value'
+		name: 'value',
+        label: 'Default value'
 	})
-	const [placeholder, _setPlaceholder] = Retool.useStateString({
-        name: 'Placeholder',
+    const [placeholder, _setPlaceholder] = Retool.useStateString({
+        name: 'placeholder',
+        label: 'Placeholder',
         initialValue: 'Type or paste your content here!'
     })
 	const editorContainerRef = useRef(null);
