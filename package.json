@@ -3,11 +3,10 @@
   "version": "0.1.1",
   "private": false,
   "dependencies": {
-    "@tryretool/custom-component-support": "latest",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "@ckeditor/ckeditor5-react": "^9.2.0",
-    "ckeditor5": "44.1.0"
+    "ckeditor5": "44.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "engines": {
     "node": ">=20.0.0"
@@ -25,18 +24,19 @@
     ]
   },
   "devDependencies": {
+    "@tryretool/custom-component-support": "^1.8.0",
     "@types/react": "^18.2.55",
     "@typescript-eslint/eslint-plugin": "^7.3.1",
     "@typescript-eslint/parser": "^7.3.1",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.1",
-    "prettier": "^3.0.3",
-    "postcss-modules": "^6.0.0"
+    "postcss-modules": "^6.0.0",
+    "prettier": "^3.0.3"
   },
   "retoolCustomComponentLibraryConfig": {
-    "name": "WYSIWYGEditor",
-    "label": "WYSIWYG Editor",
-    "description": "A library of rich text editors for Retool",
+    "name": "WysiwygEditorPlus",
+    "label": "Wysiwyg Editor Plus",
+    "description": "Výkonný vizuální editor HTML a MarkDown - verze 2.0",
     "entryPoint": "src/index.tsx",
     "outputPath": "dist"
   }
